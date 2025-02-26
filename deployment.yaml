@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: getting-started-app
-          image: 471112825453.dkr.ecr.us-east-1.amazonaws.com/getting-started-app:latest
+          image: 794038222207.dkr.ecr.us-east-1.amazonaws.com/ecr-ass:latest
           ports:
             - containerPort: 3000
           volumeMounts:
