@@ -1,10 +1,12 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: service-alb
+  name: my-alb
   annotations:
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/scheme: internet-facing
+    # alb.ingress.kubernetes.io/subnets: subnet-0904d08ffc51e3ef6 , subnet-006bf51afb09f2022
+    
 spec:
   ingressClassName: alb
   rules:
